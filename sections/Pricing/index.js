@@ -1,7 +1,7 @@
-import htmlContent from './Pricing.html';
+import htmlContent from './Pricing.html?raw';
 
 const Pricing = (container) => {
-    container.innerHTML = htmlContent;
+    container.innerHTML += htmlContent;
 }
 
 export default Pricing;

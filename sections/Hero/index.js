@@ -1,7 +1,7 @@
-import htmlContent from './Hero.html';
+import htmlContent from './Hero.html?raw';
 
 const Hero = (container) => {
-    container.innerHTML = htmlContent;
+    container.innerHTML += htmlContent;
 }
 
 export default Hero;

@@ -1,7 +1,7 @@
-import htmlContent from './Footer.html';
+import htmlContent from './Footer.html?raw';
 
 const Footer = (container) => {
-    container.innerHTML = htmlContent;
+    container.innerHTML += htmlContent;
 }
 
 export default Footer;

@@ -1,7 +1,7 @@
-import htmlContent from './Navigation.html';
+import htmlContent from './Navigation.html?raw';
 
 const Navigation = (container) => {
-    container.innerHTML = htmlContent;
+    container.innerHTML += htmlContent;
 }
 
 export default Navigation;

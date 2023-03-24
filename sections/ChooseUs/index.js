@@ -1,7 +1,7 @@
-import htmlContent from './ChooseUs.html';
+import htmlContent from './ChooseUs.html?raw';
 
 const ChooseUs = (container) => {
-    container.innerHTML = htmlContent;
+    container.innerHTML += htmlContent;
 }
 
 export default ChooseUs;

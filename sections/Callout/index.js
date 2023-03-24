@@ -1,7 +1,7 @@
-import htmlContent from './Callout.html';
+import htmlContent from './Callout.html?raw';
 
 const Callout = (container) => {
-    container.innerHTML = htmlContent;
+    container.innerHTML += htmlContent;
 }
 
 export default Callout;

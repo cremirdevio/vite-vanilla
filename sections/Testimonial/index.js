@@ -1,7 +1,7 @@
-import chooseHtml from './Testimonial.html';
+import htmlContent from './Testimonial.html?raw';
 
 const Testimonial = (container) => {
-    container.innerHTML = chooseHtml;
+    container.innerHTML += htmlContent;
 }
 
 export default Testimonial;
