@@ -1,4 +1,4 @@
-import htmlContent from './Navigation.html';
+import htmlContent from './Navigation.html?raw';
 
 // append the htmlcontent to the container
 const Navigation = (container) => {
