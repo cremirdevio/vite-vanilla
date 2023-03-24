@@ -15,11 +15,8 @@ import Footer from './sections/Footer';
 // bootstrap project
 const bodyContainer = document.body;
 const render = (container) => {
-    console.log("In the render function")
-
     // root container
     const appContainer = document.querySelector('#app');
-    console.log(appContainer)
 
     // Sections
     Navigation(appContainer);
