@@ -11,24 +11,27 @@ import Feature from './sections/Feature';
 import Testimonial from './sections/Testimonial';
 import Callout from './sections/Callout';
 import Footer from './sections/Footer';
+import About from './pages/about';
 
 // bootstrap project
 const bodyContainer = document.body;
-const render = (container) => {
+
+// routing
+const currentRoute = window.location;
+
+const render = (pageCallback) => {
     // root container
     const appContainer = document.querySelector('#app');
-
     // Sections
-    Navigation(appContainer);
-    Hero(appContainer);
-    Pricing(appContainer);
-    ChooseUs(appContainer);
-    Feature(appContainer)
-    Testimonial(appContainer)
-    Callout(appContainer)
-    Footer(appContainer)
+    pageCallback(appContainer);
 
-    return container.appendChild(appContainer);
+    bodyContainer.appendChild(appContainer);
 }
 
-render(bodyContainer);
+switch (currentRoute.pathname) {
+    case "/":
+        render(About);
+        break;
+    default:
+        break;
+}
