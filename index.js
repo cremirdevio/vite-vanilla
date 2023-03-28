@@ -1,11 +1,16 @@
-import Hero from "./sections/Hero";
-import Navigation from "./sections/Navigation/";
-import Pricing from "./sections/Pricing/"
-import Hosting from "./sections/Hosting";
-import Features from "./sections/Features";
-import Testimonial from "./sections/Testimonial";
-import Callout from "./sections/Callout";
-import Footer from "./sections/Footer";
+// styles
+import './src/css/normalize.css';
+import './src/css/styles.css';
+
+// components/sections
+import Hero from "./src/sections/Hero";
+import Navigation from "./src/sections/Navigation/";
+import Pricing from "./src/sections/Pricing/"
+import Hosting from "./src/sections/Hosting";
+import Features from "./src/sections/Features";
+import Testimonial from "./src/sections/Testimonial";
+import Callout from "./src/sections/Callout";
+import Footer from "./src/sections/Footer";
 
 const mainContainer = document.querySelector("#app");
 
