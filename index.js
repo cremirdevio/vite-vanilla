@@ -16,11 +16,28 @@ const renderer = (pageFunction) => {
     const mainContainer = document.querySelector("#app");
     mainContainer.innerHTML = ""; // clear the content of div#app
 
-    pageFunction(mainContainer);
+    if (pageFunction != undefined) {
+        pageFunction(mainContainer);
+    } else {
+        mainContainer.innerHTML =  `<div style="display:flex;justify-content:center;align-items:center; height: 100vh;">Page not found</div>`;
+    }
+    
 }
 
+// routing
+const pathName = window.location.pathname;
 
-renderer(HomePage); // /
-// renderer(PricingPage); // /pricing
-// renderer(AboutPage); // /about
-
+switch (pathName) {
+    case "/":
+        renderer(HomePage);
+        break;
+    case "/pricing": 
+        renderer(PricingPage);
+        break;
+    case "/about":
+        renderer(AboutPage);
+        break;
+    default:
+        renderer()
+        break;
+}
