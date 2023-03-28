@@ -25,19 +25,23 @@ const renderer = (pageFunction) => {
 }
 
 // routing
-const pathName = window.location.pathname;
+function router() {
+    const pathName = window.location.pathname;
 
-switch (pathName) {
-    case "/":
-        renderer(HomePage);
-        break;
-    case "/pricing": 
-        renderer(PricingPage);
-        break;
-    case "/about":
-        renderer(AboutPage);
-        break;
-    default:
-        renderer()
-        break;
+    switch (pathName) {
+        case "/":
+            renderer(HomePage);
+            break;
+        case "/pricing": 
+            renderer(PricingPage);
+            break;
+        case "/about":
+            renderer(AboutPage);
+            break;
+        default:
+            renderer()
+            break;
+    }
 }
+
+router();
