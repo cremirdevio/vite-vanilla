@@ -33,3 +33,16 @@ function render(container) {
     // Footer
     Footer(mainContainer);
 }
+
+function render1(container) {
+    // Navigation
+    Navigation(mainContainer);
+    //pricing
+    Pricing(mainContainer);
+    // Choose us
+    Hosting(mainContainer);
+    //Callout
+    Callout(mainContainer);
+    // Footer
+    Footer(mainContainer);
+}
