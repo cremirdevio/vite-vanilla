@@ -1,11 +1,13 @@
 import Callout from "../sections/Callout";
 import Footer from "../sections/Footer";
-import Hero from "../sections/Hero";
+import Hosting from "../sections/Hosting";
 import Navigation from "../sections/Navigation";
+import Pricing from "../sections/Pricing";
 
-export default function HomePage(container) {
+export default function PricingPage(container) {
     Navigation(container);
-    Hero(container);
+    Pricing(container);
+    Hosting(container);
     Callout(container);
     Footer(container);
 }
