@@ -14,18 +14,22 @@ import Footer from "./src/sections/Footer";
 
 const mainContainer = document.querySelector("#app");
 
-// Render components
-Navigation(mainContainer);
-Hero(mainContainer);
-//pricing
-Pricing(mainContainer);
-// Choose us
-Hosting(mainContainer);
-// Features
-Features(mainContainer);
-//Testimonial
-Testimonial(mainContainer);
-//Callout
-Callout(mainContainer);
-// Footer
-Footer(mainContainer);
+render();
+
+function render(container) {
+    // Render components
+    Navigation(mainContainer);
+    Hero(mainContainer);
+    //pricing
+    Pricing(mainContainer);
+    // Choose us
+    Hosting(mainContainer);
+    // Features
+    Features(mainContainer);
+    //Testimonial
+    Testimonial(mainContainer);
+    //Callout
+    Callout(mainContainer);
+    // Footer
+    Footer(mainContainer);
+}
